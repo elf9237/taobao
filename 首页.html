@@ -14,7 +14,6 @@
 <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.css" />
 <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.7/iconfont.css" />
 <link rel="stylesheet" type="text/css" href="lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui/css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--[if lt IE 9]>
 <link href="static/h-ui/css/H-ui.ie.css" rel="stylesheet" type="text/css" />
@@ -23,55 +22,65 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>Hi，H-ui</title>
+<title>首页</title>
 <meta name="keywords" content="关键词,5个左右,单个8汉字以内">
 <meta name="description" content="网站描述，字数尽量空制在80个汉字，160个字符以内！">
 </head>
 <body>
-<header class="navbar-wrapper">
+<!-- <header class="navbar-wrapper">
 	<div class="navbar navbar-black navbar-fixed-top">
 		<div class="container cl">
 			<h5>你好，<span>布衣柜商家</span> <a href="#" class="login-out">退出</a></h5>
 		</div>
 	</div>
-</header>
-<div class="container">
-	<div class="logo"><img src="images/logo.png"></div>
-</div>
+</header> -->
+
 <header class="navbar-wrapper">
-	<div class="navbar navbar-black navbar-orange">
+	<div class="navbar navbar-black navbar-orange navbar-fixed-top">
 		<div class="container cl">
+			<div class="logo"><img src="images/logo.png"></div>
 			<nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
 				<ul class="cl">
 					<li class="current"><a href="/">首页</a></li>
 					<li><a href="#">任务大厅</a></li>
 					<li><a href="#">任务管理</a></li>
-					<li><a href="#">账号充值</a></li>
+					<!-- <li><a href="#">账号充值</a></li>
 					<li><a href="#">申请提现</a></li>
 					<li><a href="#">账户明细</a></li>
-					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">帮助中心</a></li> -->
 				</ul>
 			</nav>
-			<nav class="navbar-userbar hidden-xs">
-				
+			<nav class="navbar-userbar hidden-xs nav navbar-nav">
+				<ul class="cr">
+					<li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">用户中心 <i class="Hui-iconfont">&#xe6d5;</i></a>
+						<ul class="dropDown-menu menu radius box-shadow">
+							<li><a href="#">账号充值</a></li>
+							<li><a href="#">申请提现</a></li>
+							<li><a href="#">账号明细</a></li>
+						</ul>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+				</ul>
 			</nav>
 		</div>
 	</div>
 </header>
-<section class="container">
+<section class="container mt50">
 	<div class="panel panel-default panel-tips mt20">
 		<div class="panel-header">重要说明</div>
 		<div class="panel-body">
 			<p>1、商家发任务请及时到本平台审核和处理，在默认时间内操作不会多支付旺点给买家，超出默认时间，<span class="orange">每超过12小时多支付2个旺点</span>，请在默认的时间内操作和审核；</p>
 			<p>2、任务【<span class="blue">接手方已付款，等待商家审核</span>】默认审核时间：24小时。任务有超时会补偿旺点给买家（<span class="orange"><span class="orange">每超出12小时补偿2个旺点</span></span>）；</p>
-			<p>3、任务【<span class="blue">确认付款，等待商家发货</span>】默认审核时间：<span class="blue">4小时</span>，超过时间自动发货；</p>
-			<p>4、任务【<span class="blue">确认收货好评，完成任务</span>】默认审核时间：<span class="blue">24小时</span>。如果再超过24小时还未审核，即在48小时未审核，系统将自动返款(本金和佣金)给买家，请商家及时审核，出现相关问题后果自负。任务有超时会补偿旺点给买家（<span class="orange">每超出12小时补偿2个旺点</span>）；</p>
-			<p>5、<商家span class="blue">发布的任务价格为实际下单价格</商家span>，禁止和店铺优惠券、红包等优惠信息一起使用，否则后果自行承担；</p>
-			<p>6、快递物流出现卡住或没有物流信息的情况，淘宝上发货超过8天，即第8天应允许买家在淘宝确认收货和好评，这种情况不算买家提前收货，请商家选择好的快递公司；</p>
-			<p>7、在任务【<span class="blue">接手方已付款，等待商家审核</span>】的商家审核步骤，请商家严格审查买家付款信息(订单号、买家旺旺号)等信息 ，如出现不一致，请马上提起申诉，否则后续出现相关问题后果自负。比如：❶、出现接单旺旺号与店铺实际下单旺旺号不一致，但您也给审核通过了，导致后面您真实发货，后果自负；❷、出现买家在旺旺刷平台回填的订单号与店铺实际下单的订单号不一致，但您也给审核通过了，导致后面您真实发货，后果自负。任务有超时审核会补偿旺点给买家（<span class="orange">每超出12小时补偿2个旺点</span>）；</p>
-			<p>8、在任务【<span class="blue">确认收货好评，完成任务</span>】的商家审核步骤，请商家严格审查买家是否确认收货和好评等 ，若买家未按要求完成，请马上提起申诉，否则后续出现相关问题后果自负；</p>
-			<p>9、买家未按商家要求做任务（如未收货未好评、使用淘宝客、信用卡支付等），商家可以投诉，平台只受理未完成任务的投诉，任务完成不再受理；</p>
-			<p>10、【重点提示】 若商家的账户余额不足（<span class="blue">余额 < 0元</span>），还有进行中的任务，需要商家审核的步骤【<span class="blue">接手方已付款，等待商家审核</span>】、【<span class="blue">确认收货好评，完成任务</span>】，商家未在默认<span class="blue">24小时</span> 内审核，超时的任务自动审核通过，若后续出现相关问题商家后果自行承担！</p>
+			<div class="showHide">
+				<p>3、任务【<span class="blue">确认付款，等待商家发货</span>】默认审核时间：<span class="blue">4小时</span>，超过时间自动发货；</p>
+				<p>4、任务【<span class="blue">确认收货好评，完成任务</span>】默认审核时间：<span class="blue">24小时</span>。如果再超过24小时还未审核，即在48小时未审核，系统将自动返款(本金和佣金)给买家，请商家及时审核，出现相关问题后果自负。任务有超时会补偿旺点给买家（<span class="orange">每超出12小时补偿2个旺点</span>）；</p>
+				<p>5、<商家span class="blue">发布的任务价格为实际下单价格</商家span>，禁止和店铺优惠券、红包等优惠信息一起使用，否则后果自行承担；</p>
+				<p>6、快递物流出现卡住或没有物流信息的情况，淘宝上发货超过8天，即第8天应允许买家在淘宝确认收货和好评，这种情况不算买家提前收货，请商家选择好的快递公司；</p>
+				<p>7、在任务【<span class="blue">接手方已付款，等待商家审核</span>】的商家审核步骤，请商家严格审查买家付款信息(订单号、买家旺旺号)等信息 ，如出现不一致，请马上提起申诉，否则后续出现相关问题后果自负。比如：❶、出现接单旺旺号与店铺实际下单旺旺号不一致，但您也给审核通过了，导致后面您真实发货，后果自负；❷、出现买家在旺旺刷平台回填的订单号与店铺实际下单的订单号不一致，但您也给审核通过了，导致后面您真实发货，后果自负。任务有超时审核会补偿旺点给买家（<span class="orange">每超出12小时补偿2个旺点</span>）；</p>
+				<p>8、在任务【<span class="blue">确认收货好评，完成任务</span>】的商家审核步骤，请商家严格审查买家是否确认收货和好评等 ，若买家未按要求完成，请马上提起申诉，否则后续出现相关问题后果自负；</p>
+				<p>9、买家未按商家要求做任务（如未收货未好评、使用淘宝客、信用卡支付等），商家可以投诉，平台只受理未完成任务的投诉，任务完成不再受理；</p>
+				<p>10、【重点提示】 若商家的账户余额不足（<span class="blue">余额 < 0元</span>），还有进行中的任务，需要商家审核的步骤【<span class="blue">接手方已付款，等待商家审核</span>】、【<span class="blue">确认收货好评，完成任务</span>】，商家未在默认<span class="blue">24小时</span> 内审核，超时的任务自动审核通过，若后续出现相关问题商家后果自行承担！</p>
+			</div>
 		</div>
 	</div>
 	<div class="tiro-control">
@@ -283,6 +292,19 @@ $(function(){
 	$("#demoform").Validform({
 		tiptype:2
 	});
+
+	// 收缩
+	$('.open-btn').on('click',function(){
+		$(this).parent('.tiro-control').siblings('.panel').find('.showHide').slideToggle();
+		$(this).toggleClass('active');
+		if ($(this).hasClass('active')) {
+			$(this).text('展开');
+			// $(this).find('i').css('background-position','4px -28px')
+		}else{
+			$(this).text('收缩');
+			// $(this).find('i').css('background-position','4px 7px')
+		}
+	})
 });
 </script>
 </body>
