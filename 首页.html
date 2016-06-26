@@ -279,6 +279,7 @@
 <script type="text/javascript" src="lib/bootstrap-Switch/bootstrapSwitch.js"></script> 
 <script type="text/javascript" src="lib/Validform/5.3.2/Validform.min.js"></script> 
 <script type="text/javascript" src="lib/Validform/5.3.2/passwordStrength-min.js"></script>
+<script type="text/javascript" src="lib/layer/layer.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
 <script>
 //var navigation = responsiveNav("Hui-navbar", {customToggle: ".nav-toggle"});
@@ -304,7 +305,16 @@ $(function(){
 			$(this).text('收缩');
 			// $(this).find('i').css('background-position','4px 7px')
 		}
-	})
+	});
+	
+    layer.open({
+        type: 1,
+        area: ['600px', '360px'],
+        shadeClose: true, //点击遮罩关闭
+        title:'重点说明',
+        content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+    });
+
 });
 </script>
 </body>
