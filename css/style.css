@@ -73,7 +73,7 @@ a{color: #02accd; text-decoration: none;}
 .search-tab ul li span.tab-title{display: inline-block;width: 85px;text-align: right;}
 .search-tab ul li span.tab-tip{display: inline-block;height: 30px;line-height: 30px;padding: 0 10px;border: 1px solid #e5e5e5;cursor: pointer;}
 .search-tab ul li span.tab-tip:hover,.search-tab ul li span.tab-tip:focus{border-color: #FF5A09}
-.search-tab .tab02 input.input-text{width: 250px;margin-right: 10px}
+.search-tab .tab02 input.input-text{width: 150px;margin-right: 10px}
 .search-tab .tab03 .star a{display: inline-block;padding: 0 5px;margin-right: 5px;}
 .searchTable table tr td>span{display: block;}
 .searchTable table tr td>span .label{margin-right: 5px;}
@@ -95,3 +95,47 @@ a{color: #02accd; text-decoration: none;}
 .serch-type ul{display: inline-block;}
 .serch-type ul li{float: left;}
 .serch-type ul li a{color: #000;display: inline-block;padding: 0 10px;}
+
+
+.moneyOrder .form-horizontal .form-label{width: 130px;}
+.money-list .tips{padding-left: 130px;}
+.btnWrap .btn-ti{margin-left: 130px;padding: 5px 40px}
+.addCar .wrong-tips{height: 31px;line-height: 31px;display: inline-block;padding-left: 200px;min-width: 350px;}
+.addCar .formControls{width: 300px;}
+.addCar .special .formControls {width: 150px;}
+.addCar .form-label{width: 200px;text-align: right;}
+.sprite{display: inline-block;margin-right: 10px;}
+
+.userPsw .form-horizontal .form-label{width: 160px;}
+.userPsw  .btnWrap .btn-ti{margin-left: 160px;}
+.helpCenterType{width:20%;}
+.helpCenterContent{width: 75%}
+
+.userDetail li a{display: block;color: #000;font-size: 14px;padding: 5px 0}
+.userDetail li a:hover,.userDetail li.active a{color: #FF5A09;text-decoration: none;}
+.userDetail li a span{display: inline-block;padding-right: 10px;}
+.helpCenterType .Huifold .item h4{background: #fff;border: 1px solid #e5e5e5;}
+.helpCenterType .info{border: 1px solid #e5e5e5;border-top: none;border-bottom: none}
+.help_kf h3{    height: 45px;
+    line-height: 45px;
+    border-bottom: solid 1px #E6E6E6;
+    background: #FCFCFC;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 10px;
+    padding-top: 0px;padding-bottom: 0px;
+}
+    .help_kf .help_tab {
+    padding: 0 8px;
+}
+.help_kf .help_tab p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.help_kf {
+    clear: both;
+    margin-top: 20px;
+    border: solid 1px #E6E6E6;
+}
