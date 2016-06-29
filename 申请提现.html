@@ -71,23 +71,23 @@
 	<div class="clearfix mt10">
 		<div class="menuSidebar f-l">
 		<dl>
-			<dt>任务大厅</dt>
+			<dt><i></i>任务大厅</dt>
 			<dd><a href="#">大厅任务</a></dd>
-			<dt>淘宝任务</dt>
+			<dt><i class="n3"></i>淘宝任务</dt>
 			<dd><a href="#">淘宝精刷任务</a></dd>
 			<dd><a href="#">淘宝普通任务</a></dd>
 			<dd><a href="#">任务申述</a></dd>
-			<dt>京东任务</dt>
+			<dt><i class="n3"></i>京东任务</dt>
 			<dd><a href="#">京东精刷任务</a></dd>
 			<dd><a href="#">京东普通任务</a></dd>
 			<dd><a href="#">任务申述</a></dd>
-			<dt>流量任务</dt>
+			<dt><i class="n3"></i>流量任务</dt>
 			<dd><a href="#">淘宝流量任务</a></dd>
 			<dd><a href="#">任务申述</a></dd>
-			<dt>小号管理</dt>
+			<dt><i class="n5"></i>小号管理</dt>
 			<dd><a href="#">淘宝小号</a></dd>
 			<dd><a href="#">京东小号</a></dd>
-			<dt>我的账户</dt>
+			<dt><i class="n4"></i>我的账户</dt>
 			<dd><a href="#">申请提现</a></dd>
 			<dd><a href="#">账户明细</a></dd>
 			<dd><a href="#">基本资料</a></dd>
@@ -112,9 +112,9 @@
 					</div>
 					<div class="row cl">
 						<label class="form-label col-xs-4 col-sm-3">提现类型：</label>
-						<div class="formControls col-xs-2 col-sm-3">
-							<span>正常到账（24小时）</span>
-							<span>快速到账（2小时）</span>
+						<div class="formControls col-xs-4 col-sm-6">
+							<span class="tab-tip">正常到账（24小时）</span>
+							<span class="tab-tip">快速到账（2小时）</span>
 						</div>
 					</div>
 					<div class="row cl money-list">
@@ -126,7 +126,7 @@
 							<input type="text" class="input-text" autocomplete="off" placeholder="提现金额">
 						</div>
 						<div class="formControls col-xs-2 col-sm-3">
-							<span>请输入提现金额，金额要100元起</span>
+							<span class="onShow">请输入提现金额，金额要100元起</span>
 						</div>
 					</div>
 					<div class="row cl">
@@ -148,7 +148,7 @@
 							<input type="password" class="input-text" autocomplete="off" placeholder="请输入交易密码">
 						</div>
 						<div class="formControls col-xs-2 col-sm-3">
-							<span>请输入交易密码,默认为登录密码。</span>
+							<span class="onFocus onError">请输入交易密码,默认为登录密码。</span>
 						</div>
 					</div>
 					<div class="row cl">
@@ -157,7 +157,8 @@
 						</div>
 					</div>
 				</form>
-				<div class="moneyTips">
+				<div class="moneyTips black-remind">
+					<i></i>
 					<h5>温馨提示：</h5>
 					<p class="orange">什么时候处理提现呢，多久到账？</p>
 					<p>“正常到账”提现，我们在（周一 ~ 周六）上午11点由专人负责处理这时间点之前所有的提现申请，处理提现正常情况下1个小时内到账，法定节日、周日不处理提现；“快速到账”规则见第3点说明。</p>
@@ -199,6 +200,10 @@
 //var navigation = responsiveNav("Hui-navbar", {customToggle: ".nav-toggle"});
 
 $(function(){
+	// 添加选中项
+	$('.tab-tip').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
 	 $('#addCar').on('click',function(){
             indexAgency=layer.open({
                 type:2,

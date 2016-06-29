@@ -81,6 +81,9 @@
 				<p>9、买家未按商家要求做任务（如未收货未好评、使用淘宝客、信用卡支付等），商家可以投诉，平台只受理未完成任务的投诉，任务完成不再受理；</p>
 				<p>10、【重点提示】 若商家的账户余额不足（<span class="blue">余额 < 0元</span>），还有进行中的任务，需要商家审核的步骤【<span class="blue">接手方已付款，等待商家审核</span>】、【<span class="blue">确认收货好评，完成任务</span>】，商家未在默认<span class="blue">24小时</span> 内审核，超时的任务自动审核通过，若后续出现相关问题商家后果自行承担！</p>
 			</div>
+			<div class="checkShow">
+				<label for="checkshow"><input type="checkbox" name="checkshow" id="checkshow">&nbsp;下次不再自动展开</label>
+			</div>
 		</div>
 	</div>
 	<div class="tiro-control">
@@ -135,7 +138,11 @@
 			  		<td class="first">
 			  			<span>TB201606261747428126850</span>
 			  			<span>发布人：L千语</span>
-			  			<span class="label label-warning radius">淘宝</span>
+			  			<span>
+			  				<span class="label label-warning radius">淘宝</span>
+			  				<span class="mobile-order" title="接任务者需要通过手机、pad等智能设备的app下单支付">手机订单</span>
+			  			</span>
+			  			
 			  		</td>
 			  		<td><span class="orange">71.40</span></td>
 			  		<td>
@@ -166,7 +173,10 @@
 			  		<td class="first">
 			  			<span>TB201606261747428126850</span>
 			  			<span>发布人：L千语</span>
-			  			<span class="label label-warning radius">淘宝</span>
+			  			<span>
+			  				<span class="label label-warning radius">淘宝</span>
+			  				<span class="mobile-order" title="接任务者需要通过手机、pad等智能设备的app下单支付">手机订单</span>
+			  			</span>
 			  		</td>
 			  		<td><span class="orange">71.40</span></td>
 			  		<td>
@@ -506,6 +516,14 @@ $(function(){
 		tiptype:2
 	});
 
+	// 添加选中项
+	$('.tab-tip').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+	$('.star').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		return false;
+	})
 	// 收缩
 	$('.open-btn').on('click',function(){
 		$(this).parent('.tiro-control').siblings('.panel').find('.showHide').slideToggle();
@@ -519,14 +537,26 @@ $(function(){
 		}
 	});
 	
-    // layer.open({
-    //     type: 1,
-    //     area: ['600px', '360px'],
-    //     shadeClose: true, //点击遮罩关闭
-    //     title:'重点说明',
-    //     content: '\<\div style="padding:20px;">自定义内容\<\/div>'
-    // });
+    
 $.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","0");
+
+layer.config({
+	    extend: ['skin/layerSkinExtend.css'], //加载新皮肤
+	    skin: 'layer-ext-myskin' //一旦设定，所有弹层风格都采用此主题。
+	});
+	// 弹出提示
+        indexAgency= top.layer.open({
+            type:2,
+            area:['900px','750px'],
+            shadeClose:true,
+            content:['./提示弹窗.html','no'],
+            btn:'确定',
+            title:'重点说明(30秒后自动关闭)',
+            time:30000,
+            yes:function(index){
+                layer.close(indexAgency);
+            }
+        }); 
 });
 </script>
 </body>

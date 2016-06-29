@@ -81,6 +81,9 @@
 				<p>9、买家未按商家要求做任务（如未收货未好评、使用淘宝客、信用卡支付等），商家可以投诉，平台只受理未完成任务的投诉，任务完成不再受理；</p>
 				<p>10、【重点提示】 若商家的账户余额不足（<span class="blue">余额 < 0元</span>），还有进行中的任务，需要商家审核的步骤【<span class="blue">接手方已付款，等待商家审核</span>】、【<span class="blue">确认收货好评，完成任务</span>】，商家未在默认<span class="blue">24小时</span> 内审核，超时的任务自动审核通过，若后续出现相关问题商家后果自行承担！</p>
 			</div>
+			<div class="checkShow">
+				<label for="checkshow"><input type="checkbox" name="checkshow" id="checkshow">&nbsp;下次不再自动展开</label>
+			</div>
 		</div>
 	</div>
 	<div class="tiro-control">
@@ -96,7 +99,10 @@
 			<a href="#">昨日</a>
 			<a href="#">周</a>
 			<a href="#">月</a>
-			<span>按店铺删选：<select name="" id=""><option>选择店铺</option></select></span>
+			<div class="f-r title-sel clearfix">
+				<span class="f-l">按日期删选：</span>
+				<div class="clearfix timeAlone f-l"></div>
+			</div>
 		</div>
 	</div>
 	<div class="cl" id="meminfo">
@@ -169,8 +175,9 @@
 <section class="container taobaoData jdData">
 	<div class="title cl">
 		<h4 class="f-l">京东统计概况</h4>
-		<div class="f-r title-sel">
-			<span>按店铺删选：<select name="" id=""><option>选择店铺</option></select></span>
+		<div class="f-r title-sel clearfix">
+			<span class="f-l">按日期删选：</span>
+			<div class="clearfix timeAlone f-l"></div>
 		</div>
 	</div>
 	<div class="cl">
@@ -209,8 +216,11 @@
 		<div class="count_left">
 			<div class="task_count_tit">
 				<div class="panel panel-default">
-					<div class="panel-header cl"><h5 class="f-l">近30天任务趋势</h5> <div class="f-r"><input type="text" placeholder="开始时间" class="input-text radius size-M">至<input type="text" placeholder="结束时间" class="input-text radius size-M"><input class="btn btn-primary radius btn-orange" type="button" value="确定"></div></div>
-					<div class="panel-body">面板内容</div>
+					<div class="panel-header cl"><h5 class="f-l">近30天任务趋势</h5> <div class="f-r">
+					<input type="text" id="d4311" placeholder="开始时间" class="input-text radius size-M Wdate" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'d4312\')||\'2020-10-01\'}'})">至<input type="text" id="d4312" placeholder="结束时间" class="input-text radius size-M Wdate" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')}',maxDate:'2020-10-01'})"><input class="btn btn-primary radius btn-orange" type="button" value="确定"></div></div>
+					<div class="panel-body">
+						面板图标
+					</div>
 				</div>
 			</div>
 		</div>
@@ -281,6 +291,9 @@
 <script type="text/javascript" src="lib/Validform/5.3.2/passwordStrength-min.js"></script>
 <script type="text/javascript" src="lib/layer/layer.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
+<!-- 日期控件 -->
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
 <script>
 //var navigation = responsiveNav("Hui-navbar", {customToggle: ".nav-toggle"});
 
@@ -306,14 +319,24 @@ $(function(){
 			// $(this).find('i').css('background-position','4px 7px')
 		}
 	});
-	
-    layer.open({
-        type: 1,
-        area: ['600px', '360px'],
-        shadeClose: true, //点击遮罩关闭
-        title:'重点说明',
-        content: '\<\div style="padding:20px;">自定义内容\<\/div>'
-    });
+
+	layer.config({
+	    extend: ['skin/layerSkinExtend.css'], //加载新皮肤
+	    skin: 'layer-ext-myskin' //一旦设定，所有弹层风格都采用此主题。
+	});
+	// 弹出提示
+        indexAgency= top.layer.open({
+            type:2,
+            area:['900px','750px'],
+            shadeClose:true,
+            content:['./提示弹窗.html','no'],
+            btn:'确定',
+            title:'重点说明(30秒后自动关闭)',
+            time:30000,
+            yes:function(index){
+                layer.close(indexAgency);
+            }
+        }); 
 
 });
 </script>

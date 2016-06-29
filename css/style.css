@@ -26,7 +26,7 @@
 .taobao .count_block dl h2{display: block; font-size: 16px; padding: 13px 0;}
 .taobao .count_block dl dt{float: left; width: 115px; height: 73px;}
 .taobao .count_block dl.blue dt{background: url('../images/count_bg3.png') repeat-y right 0;}
-.taobao .count_block dl label{display: block; font-size: 12px; padding: 10px 0 5px 0;}
+.taobao .count_block dl label{display: block; font-size: 14px; padding: 10px 0 5px 0;}
 .taobao .count_block dl em{font-size: 16px;}
 .taobao .count_block dl dd{float: right; width: 115px;}
 .taobao .count_block p{text-align: center; padding: 5px 0; background: #fafafa;}
@@ -56,37 +56,70 @@
 .red{color: #ef392b;}
 .orange{color:#ff5a09;}
 .blue{color: #3bb4f2;}
-a{color: #02accd; text-decoration: none;}
+a{color: #333; text-decoration: none;font-size: 14px;}
 .mt50{margin-top: 50px;}
 .mt15{margin-top: 15px;}
 .mb10{margin-bottom: 10px;}
 .mt30{margin-top: 30px;}
 .mt10{margin-top: 10px;}
 
-
-.tabBar span.current{background: #FF5A09;}
+/*任务大厅*/
+.tabBar span.current{background: #ff5a09;}
 .tabBar span{padding: 0 25px;height: 40px;line-height: 40px;}
-.tabBar{border-bottom: 2px solid #FF5A09}
+.tabBar{border-bottom: 2px solid #ff5a09}
 .tabBar span{background: #fff;}
 .search-tab ul li{margin-top: 10px;}
 .search-tab ul li span{font-size: 14px;}
 .search-tab ul li span.tab-title{display: inline-block;width: 85px;text-align: right;}
-.search-tab ul li span.tab-tip{display: inline-block;height: 30px;line-height: 30px;padding: 0 10px;border: 1px solid #e5e5e5;cursor: pointer;}
-.search-tab ul li span.tab-tip:hover,.search-tab ul li span.tab-tip:focus{border-color: #FF5A09}
-.search-tab .tab02 input.input-text{width: 150px;margin-right: 10px}
+.search-tab ul li span.tab-tip{display: inline-block;height: 30px;line-height: 30px;padding: 0 10px;border: 2px solid #e5e5e5;cursor: pointer;}
+.search-tab ul li span.tab-tip:hover,.search-tab ul li span.tab-tip.active{border:2px solid #FF5A09}
+.search-tab .tab02 input.input-text{width: 162px;margin-right: 10px}
 .search-tab .tab03 .star a{display: inline-block;padding: 0 5px;margin-right: 5px;}
+.search-tab .tab03 .star a:hover,.search-tab .tab03 .star.active a{color: #ff5a09}
 .searchTable table tr td>span{display: block;}
 .searchTable table tr td>span .label{margin-right: 5px;}
 .searchTable table tr td.first span.label{width: 30px;text-align: center;}
+.search-tab .btn{padding: 4px 30px}
+.mobile-order {
+    display: inline-block;
+    width: 46px;
+    height: 16px;
+    background: url(../images/sjdd.png) no-repeat 0 0;
+    vertical-align: middle;
+    text-indent: -9999px;
+    overflow: hidden;
+}
 
+/*任务管理*/
 .menuSidebar{width: 15%;}
 .menuSidebar dl dt,.menuSidebar dl dd{display: block;height: 40px;line-height: 40px;border: 1px solid #e5e5e5;text-align: left;}
 .menuSidebar dl dd{border-top: none;border-bottom: none;}
-.menuSidebar dl dt{padding-left: 40px;}
+.menuSidebar dl dt{padding-left: 10px;font-size: 16px}
 .menuSidebar dl dd a{display: block;padding-left: 40px;color: #999;}
 .menuSidebar dl dd a:hover{background: #FF5A09;color: #fff;text-decoration: none;}
 .menuSidebar dl dd.active a{color: #FF5A09;}
 .menuSidebar dl dd.last{border-bottom: 1px solid #e5e5e5}
+.menuSidebar dl dt i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/leftnav_icon.png);
+    background-repeat: no-repeat;
+    margin: 0 6px 0 4px;
+    vertical-align: middle;
+}
+.menuSidebar dl dt i.n3 {
+    background-position: 0 -62px;
+}
+.menuSidebar dl dt i.n5 {
+    background-position: 0 -102px;
+}
+.menuSidebar dl dt  i.n4 {
+    background-position: 0 -82px;
+}
+.panel-body p{font-size: 14px;}
+.Huialert-error{border-color:#ff5a09;background-color: #ff5a09}
+
 
 .workContent h4{background: #f8f8f8;padding: 10px;}
 .workContent h4 .title{border-left: 4px solid #FF5A09;display: inline-block;padding-left: 5px;}
@@ -96,7 +129,7 @@ a{color: #02accd; text-decoration: none;}
 .serch-type ul li{float: left;}
 .serch-type ul li a{color: #000;display: inline-block;padding: 0 10px;}
 
-
+/*申请提现*/
 .moneyOrder .form-horizontal .form-label{width: 130px;}
 .money-list .tips{padding-left: 130px;}
 .btnWrap .btn-ti{margin-left: 130px;padding: 5px 40px}
@@ -105,7 +138,62 @@ a{color: #02accd; text-decoration: none;}
 .addCar .special .formControls {width: 150px;}
 .addCar .form-label{width: 200px;text-align: right;}
 .sprite{display: inline-block;margin-right: 10px;}
+.tab-tip{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 2px solid #e5e5e5;
+    cursor: pointer;
+}
+.tab-tip.active,.tab-tip:hover{
+        border: 2px solid #FF5A09;
+}
+.onShow, .onFocus, .onError, .onCorrect, .onLoad, .onTime {
+    display: inline-block;
+    display: -moz-inline-stack;
+    zoom: 1;
+    vertical-align: middle;
+    background: url(../images/msg_bg.png) no-repeat;
+    color: #444;
+    line-height: 18px;
+    padding: 2px 10px 2px 23px;
+    margin-left: 10px;
+    _margin-left: 5px;
+}
+.onShow {
+    background-position: 3px -147px;
+    border-color: #40B3FF;
+    color: #959595;
+}
+.onFocus {
+    background-position: 3px -147px;
+    border-color: #40B3FF;
+}
+.onError {
+    background-position: 3px -47px;
+    border-color: #40B3FF;
+    color: red;
+}
+.black-remind {
+    position: relative;
+    padding: 10px 10px 10px 60px;
+    margin: 0 0 10px 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.black-remind i {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 30px;
+    height: 33px;
+    background: url(../images/tip-icon1.png) no-repeat -32px -70px;
+}
 
+/*帮助中心*/
 .userPsw .form-horizontal .form-label{width: 160px;}
 .userPsw  .btnWrap .btn-ti{margin-left: 160px;}
 .helpCenterType{width:20%;}
@@ -138,4 +226,169 @@ a{color: #02accd; text-decoration: none;}
     clear: both;
     margin-top: 20px;
     border: solid 1px #E6E6E6;
+}
+.helpCenterType .tabBar span{padding: 0 39px;padding-right: 40px;}
+.help_title h4 {
+    display: block;
+    border-bottom: 2px solid #ff5a09;
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 20px
+}
+.helpCenter{min-height: 710px}
+
+/*登入界面*/
+.phcolor{ color:#999;}
+.indexCenter-login{width: 1000px;margin: 0 auto;margin-top: 60px;overflow: hidden;margin-bottom: 250px;}
+.login-ad{width: 650px;height: 400px;}
+*.login-ad{width: 620px;height: 400px;overflow: hidden;}
+*.login-ipt{height: 399px;}
+.login-ipt{width: 350px;height: 400px;border: 1px solid #e5e5e5;box-sizing: border-box;padding-left: 25px;}
+.login-ipt h3{font-size: 18px;color: #414141;margin-top: 25px;}
+.login-ipt-txt{position: relative;}
+.login-ipt-txt input[type=text]{width: 290px;height: 40px;line-height: 40px;border: 1px solid #e5e5e5;border-radius: 5px;padding-left: 30px;box-sizing: border-box;}
+.login-ipt-txt img{position: absolute;left: 5px;top: 13px;}
+.login-link{margin-top: 10px;}
+.login-link .rememberPas-link{color: #999;padding-left: 20px;display: inline-block;text-decoration: underline;}
+.login-link .rememberPas-resige{color: #3197de;margin-right: 35px;text-decoration: underline;}
+.btn-login{width: 290px;height: 40px;line-height: 40px;background: #ff4400;display: block;color: #fff;text-decoration: none;text-align: center;font-size: 14px;border-radius: 5px;}
+.login-others a{display: inline-block;}
+.errMsg{text-align: left;margin-top: 10px;}
+.errMsg span{color: 14px}
+.login-logo{width: 200px;}
+.login-logo img{width: 100%;height: 100%;}
+.reCaptcha{ position:relative; top:0; right:0;}
+.reCaptcha li input[type=text] {
+    width: 288px;
+    height: 38px;
+    line-height: 38px;
+    border: #dcdcdc solid 1px;
+    border-radius: 5px;
+    float: left;
+    padding-left: 10px;
+}
+.btn-reCaptcha {
+    width: 85px;
+    height: 40px;
+    border: #dcdcdc solid 1px;
+    outline: none;
+    background: #eee;
+    position: absolute;
+    top: 0px;
+    right: 33px;
+    cursor: pointer;
+}
+.btn-login:hover{color: #fff;}
+
+/*前端-注册*/
+.register-header{}
+.register-header-w1000{width:1000px; margin:80px auto 0px; padding:0 0 10px 0; border-bottom:#dcdcdc solid 1px;}
+.register-header-l{ float:left;}
+.regist-wwl-logo{ float:left;}
+.goback{ margin:50px 0 0 0;isplay:inline-block; color:#414141; font-size:14px; float:left;}
+.register-header-r{ float:right;}
+.LoginNow{ width:100px; height:30px; line-height:30px; color:#7ab800; font-size:14px; border:#7ab800 solid 1px; background:#fff; outline:none;cursor: pointer;}
+.register-main-w1000{ width:1000px; margin:0 auto;}
+.register-main{ min-height: 600px}
+.register-main-title{ height:80px; line-height:80px; color:#414141; font-size:24px; letter-spacing:2px;}
+.register-main-content{ margin-bottom:20px;}
+.register-main-content li span{ font-size:14px; vertical-align:middle}
+.register-main-content li input{ vertical-align:middle}
+.register-main-content li{ margin-bottom:20px; position: relative; top:0; right:0;}
+.register-main-content li label{ width:105px; height:40px; line-height:40px; margin-right:10px; text-align:right; color:#414141; font-size:14px; display:inline-block; float:left;}
+.register-main-content li input[type=text]{ width:288px; height:38px; line-height:38px; border:#dcdcdc solid 1px; border-radius:5px; float:left;padding-left: 10px;}
+.level{ margin:12px 0 0 10px; float:left;}
+.level span{ width:60px; height:20px; line-height:20px; margin:0 5px 0 0; color:#fff; text-align:center; display:inline-block}
+.level span.level-weak{ background:#f7941d;}
+.level span.level-middle{ background:#ff4400;}
+.level span.level-strong{ background:#ff0000;}
+.tip{ height:40px; line-height:40px; margin:0 0 0 10px; color:#333; font-size:14px; float:left;}
+.reCaptcha{ float:left; position:relative; top:0; right:0;}
+.btn-reCaptcha{ width:85px; height:40px; border:#dcdcdc solid 1px; outline:none; background:#eee; position:absolute; top:0px; right:0px;cursor: pointer;}
+.btn-reCaptcha-t{color: #ff0000;}
+.btn-now{ width:285px; height:35px; line-height:35px; margin:20px 0 0 340px; color:#fff; font-size:14px; border:none; outline:none; border-radius:5px; background:#7ab800;cursor: pointer;}
+
+
+/*前端-忘记密码*/
+.regist-bar01{ width:787px; height:39px; margin:0 auto 55px; background:url(../images/register-bar01.png) no-repeat;}
+.btn-register-ok{  width:285px; height:35px; line-height:35px; margin:20px 0 0 320px; color:#fff; font-size:14px; border:none; outline:none; border-radius:5px; background:#ff4400;}
+
+
+/*公用*/
+.mt10{margin-top: 10px;}
+.blue{color: #4491dc;}
+.mt20{margin-top: 20px;}
+.mt15{margin-top: 15px;}
+.mt45{margin-top: 45px;}
+.mt60{margin-top: 60px;}
+.ml5{margin-left: 5px;}
+.mt30{margin-top: 30px;}
+.mb20{margin-bottom: 20px;}
+.mb50{margin-bottom: 50px;}
+.mt50{margin-top: 50px;}
+.mt40{margin-top: 40px;}
+.mb150{margin-bottom: 150px;}
+sup{vertical-align: super;}
+.cursor{cursor: pointer;}
+.mb250{margin-bottom: 250px;}
+.mb10{margin-bottom: 10px;}
+.mt60{margin-top: 60px;}
+.mt100{margin-top: 100px;}
+.mt120{margin-top: 120px;}
+.mt70{margin-top: 70px;}
+.pb15{padding-bottom: 15px;}
+.pt15{padding-top: 15px;}
+.mb60{margin-bottom: 60px;}
+.f20{font-size: 20px;}
+.pt20{padding-top: 20px;}
+.ml10{margin-left: 10px;}
+.fz18{ font-size:18px;}
+.ml150{ margin-left:150px;}
+.ml250{margin-left: 250px;}
+.mt5{margin-top: 5px;}
+.black{color: #000;}
+.f24{font-size: 24px;}
+.f30{font-size: 30px;}
+.fz14{ font-size:14px;}
+.fz16{ font-size:16px}
+.fz30{ font-size:30px;}
+.pd60{ padding-bottom:60px;}
+.pt55{ padding-top:55px;}
+.pt360{ padding-top:360px;}
+.mt5{ margin-top:5px;}
+.mr35{ margin-right:35px;}
+.ml65{ margin-left:65px;}
+.mr180{ margin-right:180px;}
+.mr190{ margin-right:190px;}
+em{font-style: normal;}
+p{font-size: 14px;}
+
+/*提示弹出框*/
+.pob-tip{padding: 10px}
+.pob-tip p{line-height: 30px}
+
+/*分页样式*/
+.page a {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    color: #848484;
+    border: #ededed solid 1px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.page a.page-num {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border: 0 none;
+    background: #428bca;
+}
+.page .pageTotal span {
+    display: inline-block;
+    padding: 0 3px;
+}
+.page {
+    margin: 20px 0px 0 0;
+    float: right;
 }
