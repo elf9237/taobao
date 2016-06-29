@@ -8,7 +8,8 @@
 .panel-tips .panel-header{font-size: 16px;}
 .panel-tips p{font-size: 14px;}
 .tiro-control{position: relative;top: -1px;border-top: 1px solid #ffe5bd;text-align: center;transition: border-color .15s ease-in-out;}
-.tiro-control .click-btn{display: inline-block; position: relative; margin-top: -1px; height: 28px; line-height: 28px; padding: 0 40px 0 20px; border: 1px solid #ffe5bd; border-top: none; background: #fff; cursor: pointer; color: #333;}
+.tiro-control .click-btn{display: inline-block; position: relative; margin-top: -1px; height: 28px; line-height: 28px; padding: 0 40px 0 20px; border: 1px solid #ffe5bd; border-top: none; background: #fff; cursor: pointer; color: #333;background-image: url(../images/tiro.png);
+    background-repeat: no-repeat;background-position: 52px 11px;}
 .tiro-control .click-btn i{position: absolute; right: 16px; top: 4px; display: inline-block; width: 20px; height: 20px; background-position: 4px 7px;}
 .tiro-control i{background-image: url(../images/tiro.png); background-repeat: no-repeat;}
 .taobaoData .title .title-sel a{display: inline-block;width: 40px;text-align: center;padding: 2px 0;background: #eee;}
@@ -158,8 +159,7 @@ a{color: #333; text-decoration: none;font-size: 14px;}
     color: #444;
     line-height: 18px;
     padding: 2px 10px 2px 23px;
-    margin-left: 10px;
-    _margin-left: 5px;
+   
 }
 .onShow {
     background-position: 3px -147px;
@@ -362,10 +362,10 @@ sup{vertical-align: super;}
 .mr190{ margin-right:190px;}
 em{font-style: normal;}
 p{font-size: 14px;}
-
+#QQ-link{position: fixed;top: 100px;right: 0px;}
 /*提示弹出框*/
 .pob-tip{padding: 10px}
-.pob-tip p{line-height: 30px}
+.pob-tip p{line-height: 25px}
 
 /*分页样式*/
 .page a {
@@ -392,3 +392,22 @@ p{font-size: 14px;}
     margin: 20px 0px 0 0;
     float: right;
 }
+.formControls span.text{display: inline-block;height: 22px;margin-top: 3px;}
+
+/*账户充值*/
+.crechange-tip a i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/tip-icon1.png) no-repeat 0 -120px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.moneyOrder.rechange .form-horizontal .form-label{width: 150px;}
+.rechange .formControls span.text{display: inline-block;height: 31px;margin-top: 3px;line-height: 31px}
+.rechange .btnWrap .btn-ti{margin-left: 150px;padding: 5px 55px;height: 40px;line-height: 40px;}
+
+/*淘宝任务*/
+.panel-shenHead .btn-change{margin-left: 20px}
+.checkShow{margin-left: 20px}
+.search-tab-other .tab02 .select-box{width: 290px;}
