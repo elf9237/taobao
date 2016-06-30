@@ -360,9 +360,12 @@ sup{vertical-align: super;}
 .ml65{ margin-left:65px;}
 .mr180{ margin-right:180px;}
 .mr190{ margin-right:190px;}
+.pt5{padding-top: 5px;}
 em{font-style: normal;}
 p{font-size: 14px;}
 #QQ-link{position: fixed;top: 100px;right: 0px;}
+.mr10{margin-right: 10px}
+.gray{color: #b3b3b3}
 /*提示弹出框*/
 .pob-tip{padding: 10px}
 .pob-tip p{line-height: 25px}
@@ -411,3 +414,29 @@ p{font-size: 14px;}
 .panel-shenHead .btn-change{margin-left: 20px}
 .checkShow{margin-left: 20px}
 .search-tab-other .tab02 .select-box{width: 290px;}
+.searchTable table thead tr th,.searchTable table tbody tr td{text-align: center;}
+.assure-icon i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/task-icon.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.alipay i {
+    background-position: 0 -194px;
+}
+.searchTable table tbody tr td span.order{display: inline-block;margin-top: 10px}
+.wangwang {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/wangwang.gif) no-repeat -83px -4px;
+    vertical-align: middle;
+}
+
+.appealTable table thead tr th,.appealTable table tbody tr td{text-align: center;}
+.detail-jpg{display: inline-block;width: 100px;height: 100px}
+.detail-jpg img{width: 100%;height: 100%}
+.workDetail .text-tip{padding-left: 150px}
